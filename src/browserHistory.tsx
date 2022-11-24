@@ -25,7 +25,7 @@ const userDataDirectoryPath = () => {
     throw new Error("$HOME environment variable is not set.");
   }
 
-  return path.join(process.env.HOME, "Library", "Application Support", "Google", "Chrome");
+  return path.join(process.env.HOME, "Library", "Application Support", "Chromium");
 };
 
 const historyDbPath = (profileName: string) => path.join(userDataDirectoryPath(), profileName, "History");

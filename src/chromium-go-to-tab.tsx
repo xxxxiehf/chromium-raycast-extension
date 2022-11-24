@@ -54,7 +54,7 @@ async function getOpenTabs(useOriginalFavicon: boolean): Promise<Tab[]> {
 
   const openTabs = await runAppleScript(`
       set _output to ""
-      tell application "Google Chrome"
+      tell application "Chromium"
         set _window_index to 1
         repeat with w in windows
           set _tab_index to 1
@@ -80,7 +80,7 @@ async function getOpenTabs(useOriginalFavicon: boolean): Promise<Tab[]> {
 
 async function setActiveTab(tab: Tab): Promise<void> {
   await runAppleScript(`
-    tell application "Google Chrome"
+    tell application "Chromium"
       activate
       set index of window (${tab.windowsIndex} as number) to (${tab.windowsIndex} as number)
       set active tab index of window (${tab.windowsIndex} as number) to (${tab.tabIndex} as number)

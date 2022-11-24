@@ -1,34 +1,34 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "google-chrome",
-  "title": "Google Chrome",
-  "description": "Search and open tabs and history in Google Chrome.",
-  "icon": "google_chrome-icon.png",
-  "author": "Codely",
+  "name": "chromium",
+  "title": "Chromium",
+  "description": "Search and open tabs and history in Chromium.",
+  "icon": "chromium-icon.png",
+  "author": "xxxxiehf",
   "contributors": [
     "bromanko"
   ],
   "license": "MIT",
   "commands": [
     {
-      "name": "google-chrome-go-to-tab",
+      "name": "chromium-go-to-tab",
       "title": "Search Tabs",
-      "subtitle": "Google Chrome",
+      "subtitle": "Chromium",
       "description": "List all tabs and go to the selected.",
       "mode": "view"
     },
     {
-      "name": "google-chrome-search-history",
+      "name": "chromium-search-history",
       "title": "Search History",
-      "subtitle": "Google Chrome",
+      "subtitle": "Chromium",
       "description": "Search browser history.",
       "mode": "view"
     },
     {
-      "name": "google-chrome-new-tab",
+      "name": "chromium-new-tab",
       "title": "New Tab",
-      "subtitle": "Google Chrome",
-      "description": "Open a new Google Chrome tab.",
+      "subtitle": "Chromium",
+      "description": "Open a new Chromium tab.",
       "mode": "view"
     }
   ],
@@ -37,7 +37,7 @@
       "name": "useOriginalFavicon",
       "title": "Fav icon",
       "label": "Extract the favicon from every open tab",
-      "description": "Before enable this, you should enable 'View > Developer > Allow JavaScript from Apple Events' in every Google Chrome profile.",
+      "description": "Before enable this, you should enable 'View > Developer > Allow JavaScript from Apple Events' in every Chromium profile.",
       "required": false,
       "type": "checkbox",
       "default": false
